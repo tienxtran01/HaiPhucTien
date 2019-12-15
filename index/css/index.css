@@ -1,0 +1,31 @@
+.addcart {
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.b {
+  margin-right: 5px;
+  padding-right: 100px;
+}
+p {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 10px 225px;
+}
+.gh {
+  color: black;
+}
+.content {
+  background: yellowgreen;
+}
+.icon {
+  margin-top: 30px;
+}
+.search {
+  margin-top: 30px;
+}
+.home {
+  padding-left: 3px;
+}
