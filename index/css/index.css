@@ -4,6 +4,11 @@
   padding: 10px;
   border-radius: 20px;
 }
+.addcart:hover {
+  text-decoration: none;
+  color: #d4d4d4;
+  transition: 0.3s;
+}
 .b {
   margin-right: 5px;
   padding-right: 100px;
@@ -28,4 +33,67 @@ p {
 }
 .home {
   padding-left: 3px;
+}
+.trangchu {
+  background: #dd6e00;
+  padding: 10px;
+}
+.trangchu1 {
+  color: white;
+  margin-left: 80px;
+  font-size: 15px;
+}
+.trangchu1:hover {
+  color: #d4d4d4;
+  text-decoration: none;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 0;
+  border-top: none;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 13px;
+}
+.modal-content {
+  float: left;
+  width: 75%;
+  margin-left: -400px;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+}
+.btn-login {
+  width: 223px;
+  height: 45px;
+  background: black;
+  color: #fff;
+}
+.tab {
+  overflow: hidden;
+  border: 0;
+}
+.btn-lg {
+  margin-left: 60px;
+  color: white;
+  background: #dd6e00;
 }
