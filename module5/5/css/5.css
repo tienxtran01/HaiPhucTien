@@ -1,0 +1,85 @@
+.type-5 .title1 {
+  font: 400px;
+}
+.type-5 button,
+.type-5 input,
+.type-5 optgroup,
+.type-5 select,
+.type-5 textarea {
+  margin: 27px;
+  font: inherit;
+  color: #FFF;
+  border-color: rgba(225,225,225,0.9) !important;
+  background: rgba(225,225,225,0.2);
+  border-radius: 3px;
+}
+.type-5 input {
+  background: rgba(225,225,225,0.2);
+  padding: 10px 13px;
+  border: 1px solid rgba(255,255,255,0.09);
+}
+.type-5 .button input {
+  background: #318a00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+.type-5 .title {
+  margin-top: 20px;
+  color: #0a0a0a;
+  font: 15px "Open Sans", sans-serif;
+  padding: 0px 0px 6px;
+}
+.type-5 .hr1 {
+  width: 50px;
+  border: 1px solid #fe9705;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+.type-5 .hr2 {
+  width: 100px;
+  border: 1px solid #fe9705;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+.type-5 .hr3 {
+  width: 260px;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+.type-5 .title1 {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #0a0a0a;
+  font: 15px "Open Sans", sans-serif;
+  padding: 0px 0px 6px;
+}
+.type-5 title a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+.type-5 .title1 a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+.type-5 .title a:hover {
+  color: #318a00;
+}
+.type-5 .title1 a:hover {
+  color: #318a00;
+}
+.type-5 .title1 p {
+  margin: -15px 0px;
+}
+.type-5 .footer {
+  background: #0a0a0a;
+  color: #fff;
+  padding-top: 10px;
+}
+.type-5 .footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.type-5 .footer a:hover {
+  color: #318a00;
+}
