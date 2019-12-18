@@ -22,7 +22,7 @@
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="navbar-nav kam">
           <li class="nav-item dinhvi">
-            <p> <i class="fas fa-location-arrow"></i>1 Đường 1 Quận 1 TP.HCM</p>
+            <p class="addresss"> <i class="fas fa-location-arrow"></i>1 Đường 1 Quận 1 TP.HCM</p>
           </li>
 
           <li class="nav-item home">

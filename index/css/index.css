@@ -4,20 +4,28 @@
   padding: 10px;
   border-radius: 20px;
 }
+.navbar {
+  position: relative;
+  min-height: 84px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
 .addcart:hover {
   text-decoration: none;
   color: #d4d4d4;
-  transition: 0.3s;
+  background: #1e1e1e;
+  transition: 0.5s;
 }
 .b {
   margin-right: 5px;
   padding-right: 100px;
 }
-p {
+.addresss {
   color: white;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 10px 225px;
+  padding: 10px 135px;
 }
 .gh {
   color: black;
@@ -42,16 +50,29 @@ p {
   color: white;
   margin-left: 80px;
   font-size: 15px;
+  padding-top: 12px;
 }
 .trangchu1:hover {
   color: #d4d4d4;
   text-decoration: none;
+}
+.background1:hover {
+  color: #d4d4d4;
+}
+.btn:hover {
+  color: #d4d4d4;
 }
 .tab button:hover {
   background-color: #ddd;
 }
 .tab button.active {
   background-color: #ccc;
+}
+.btn.focus,
+.btn:focus,
+.btn:hover {
+  color: #d4d4d4;
+  text-decoration: none;
 }
 .tabcontent {
   display: none;
