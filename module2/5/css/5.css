@@ -1,0 +1,29 @@
+.type-5 .block-title {
+  background: #318a00;
+}
+.type-5 .block-title h3 {
+  padding: 10px 0px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.type-5 .swiper-container {
+  padding-top: 10px;
+}
+.type-5 .name-product a {
+  color: #0a0506;
+  font: 20px "Open Sans", sans-serif;
+  margin-left: 20px;
+}
+.type-5 .price {
+  color: #d60000;
+  margin-left: 20px;
+}
+.type-5 button {
+  background: #318a00;
+  padding: 5px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-left: 20px;
+}
