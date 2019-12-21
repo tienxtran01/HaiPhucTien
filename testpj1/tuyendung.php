@@ -1,14 +1,3 @@
-<?php
-
-    $url_host = 'http://'.$_SERVER['HTTP_HOST'];
-    $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
-    $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
-
-    preg_match_all($pattern_uri, __DIR__, $matches);
-    $url_path = $url_host . $matches[1][0];
-    $url_path = str_replace('\\', '/', $url_path);
-
-?>
 <?php include './header.php'; ?>
 <div class="type-index">
     <div class="container">   
@@ -85,12 +74,12 @@
     </div>
 
     <div class="row trangchu">
-      <a class="trangchu1" href="#">Trang chủ</a>
+      <a class="trangchu1" href="index.php">Trang chủ</a>
       <a class="trangchu1" href="#">Giới thiệu</a>
       <a class="trangchu1" href="#">Sản phẩm</a>
       <a class="trangchu1" href="khuyenmai.php">Khuyến mãi</a>
-      <a class="trangchu1" href="tuyendung.php">Tuyển dụng</a>
-      <a class="trangchu1" href="lienhe.php">Liên Hệ</a>
+      <a class="trangchu1" href="#">Tuyển dụng</a>
+      <a class="trangchu1" href="#">Liên Hệ</a>
       <button type="button" class="btn  btn-lg dropbtn" data-toggle="modal" data-target="#myModal"><i class="fa fa-user background1"></i></button>
                                         <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -141,26 +130,5 @@
   </div>
   
 </div>
-<?php include './content.php'; ?>
-
-
+<?php include './module/tuyendung-content.php'; ?>
 <?php include './footer.php'; ?>
-
-
-<script>
-function openClick(evt, first) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(first).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-
-
