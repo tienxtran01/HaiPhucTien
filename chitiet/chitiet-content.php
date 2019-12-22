@@ -30,13 +30,35 @@
                     <p>Có rất nhiều yếu tố tác động đến sự phát triển của bé, nhưng có 1 cách giúp bé phát triển tự nhiên mà lại vô cùng hiệu quả là thông qua các món đồ chơi cho bé phù hợp lứa tuổi. Một trong những loại đồ chơi giúp bé phát triển trí thông minh, khéo léo, logic, sáng tạo là dòng đồ chơi xe ô tô điều khiển từ xa. Đa số các bé trai hiện nay đều rất thích chơi xe, đặc biệt cảm thấy thú vị với những chiếc siêu xe thu nhỏ, màu sắc nổi bật, sang trọng. Hơn hết là có thể tự điều khiển, có thể chạy trên mọi địa hình, với tốc độ cao.</p>
                     <div class="row">
                         <button onclick="clickCounter1()" type="button">-</button>
-                        <div id="result"></div>
+                        
                         <button onclick="clickCounter()" type="button">+</button>
+                        
                         <button class="addcart" type="button" onclick="alert('Thêm thành công')">Thêm vào giỏ hàng</button>
+                        
                     </div>
+                    <div id="result"></div>
             </div>
         </div>
 
+
+<div class="tab">
+  <button class="tablinks" onclick="openClick(event, 'mota')">Mô Tả</button>
+  <button class="tablinks" onclick="openClick(event, 'hd')">Hướng dẫn</button>
+</div>
+
+    <div id="mota" class="tabcontent">
+     
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor metus, molestie in enim vitae, pretium pellentesque velit. Nunc dolor leo, blandit et sapien sit amet, imperdiet ornare tortor.
+
+Aenean at mattis arcu. Nunc congue vitae ligula eu egestas. Quisque porttitor lorem a ligula eleifend laoreet. In consectetur congue fringilla. Phasellus a magna ultrices, accumsan leo quis, consectetur lorem.
+
+Curabitur turpis ante, pulvinar quis massa id, posuere malesuada quam. Duis interdum dolor in libero tincidunt viverra. Praesent aliquam convallis lacus non volutpat. Praesent ac odio sed mi dapibus vestibulum ultricies vel dui. Fusce non pellentesque libero.</p>
+    </div>
+
+    <div id="hd" class="tabcontent">
+  
+      <p>123456</p> 
+      </div>
     </div>
 </div>
 
@@ -70,5 +92,21 @@ function clickCounter1() {
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
+}
+</script>
+
+<script>
+function openClick(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 </script>

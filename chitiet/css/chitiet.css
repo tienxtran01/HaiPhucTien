@@ -1,26 +1,53 @@
-.addcart {
+.type-chitiet {
+  font-size: 15px;
+}
+.type-chitiet .addcart {
   background-color: #fe7a05;
   margin-left: 15px;
 }
-button {
-  color: #000;
-  background-color: transparent;
-  border: 1px solid #000;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
-  margin: 0;
-  font-family: inherit;
-  font-size: 11px;
-  line-height: 2em;
-  font-weight: 500;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  outline: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 8px 64px;
+.type-chitiet button {
   cursor: pointer;
+}
+.type-chitiet .h3,
+.type-chitiet h3 {
+  font-size: 1.75rem;
+  color: orange;
+}
+.type-chitiet .h2,
+.type-chitiet h2 {
+  font-size: 35px;
+}
+.type-chitiet p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+.type-chitiet body {
+  font-family: Arial;
+}
+.type-chitiet .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.type-chitiet .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.type-chitiet .tab button:hover {
+  background-color: #ddd;
+}
+.type-chitiet .tab button.active {
+  background-color: #ccc;
+}
+.type-chitiet .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
