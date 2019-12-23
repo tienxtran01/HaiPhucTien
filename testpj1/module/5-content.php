@@ -65,8 +65,12 @@ $url_path = str_replace('\\', '/', $url_path);
                         <div class="row col-md-4">
                         <div class="title1">
                               <span >Thông tin chung</span>
+
                               <hr class="hr2">
-                              <p><a href="#">Giới thiệu</a><br></p>
+                              <p><a href="index.php">Trang chủ</a><br></p>
+                              <span style="width: 200px"><hr></span>
+                              
+                              <p><a href="gioithieu.php">Giới thiệu</a><br></p>
                                 
                      
                               <span style="width: 200px"><hr></span>
@@ -74,15 +78,15 @@ $url_path = str_replace('\\', '/', $url_path);
                                
                              
                               <span style="width: 200px"><hr></span>
-                              <p><a href="#">Khuyến mãi</a><br></p>
+                              <p><a href="khuyenmai.php">Khuyến mãi</a><br></p>
                                 
                               
                               <span style="width: 200px"><hr></span>
-                              <p><a href="#">Tuyển dụng</a><br></p>
+                              <p><a href="tuyendung.php">Tuyển dụng</a><br></p>
                                 
                              
                               <span style="width: 200px"><hr></span>
-                              <p><a href="#">Liên hệ</a><br></p>
+                              <p><a href="lienhe.php">Liên hệ</a><br></p>
                               <span style="width: 200px"><hr></span>
                                 
 

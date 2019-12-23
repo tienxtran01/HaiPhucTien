@@ -85,8 +85,8 @@
     </div>
 
     <div class="row trangchu">
-      <a class="trangchu1" href="#">Trang chủ</a>
-      <a class="trangchu1" href="gioithieu.php">Giới thiệu</a>
+      <a class="trangchu1" href="index.php">Trang chủ</a>
+      <a class="trangchu1" href="#">Giới thiệu</a>
       <a class="trangchu1" href="chitiet.php">Sản phẩm</a>
       <a class="trangchu1" href="khuyenmai.php">Khuyến mãi</a>
       <a class="trangchu1" href="tuyendung.php">Tuyển dụng</a>
@@ -141,8 +141,8 @@
   </div>
   
 </div>
-<?php include './module/4-content.php'; ?>
-<?php include './content.php'; ?>
+<?php include './module/gioithieu-content.php'; ?>
+
 
 
 <?php include './footer.php'; ?>

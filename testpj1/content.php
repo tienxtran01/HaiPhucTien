@@ -1,1 +1,2 @@
-<?php include './module/gioithieu-content.php'; ?>
+
+<?php include './module/6-content.php'; ?>

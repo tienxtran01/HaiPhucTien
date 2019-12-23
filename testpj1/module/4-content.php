@@ -12,6 +12,7 @@ $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
 ?>
         <div class="type-4">
+          
              <div class="style-4 ">
                 
                
@@ -25,8 +26,7 @@ $url_path = str_replace('\\', '/', $url_path);
       
     </div>
     <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    
   </div>
 
    
