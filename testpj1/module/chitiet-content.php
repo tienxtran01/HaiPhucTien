@@ -21,14 +21,16 @@
                     <h3>145000đ</h3>
                     <p>Có rất nhiều yếu tố tác động đến sự phát triển của bé, nhưng có 1 cách giúp bé phát triển tự nhiên mà lại vô cùng hiệu quả là thông qua các món đồ chơi cho bé phù hợp lứa tuổi. Một trong những loại đồ chơi giúp bé phát triển trí thông minh, khéo léo, logic, sáng tạo là dòng đồ chơi xe ô tô điều khiển từ xa. Đa số các bé trai hiện nay đều rất thích chơi xe, đặc biệt cảm thấy thú vị với những chiếc siêu xe thu nhỏ, màu sắc nổi bật, sang trọng. Hơn hết là có thể tự điều khiển, có thể chạy trên mọi địa hình, với tốc độ cao.</p>
                     <div class="row">
-                        <button onclick="clickCounter1()" type="button">-</button>
-                        
-                        <button onclick="clickCounter()" type="button">+</button>
-                        
+                    <input type="number" name="quantity" min="1">
+                           
                         <button class="addcart" type="button" onclick="alert('Thêm thành công')">Thêm vào giỏ hàng</button>
                         
                     </div>
-                    <div id="result"></div>
+                    
+
+                 
+                            
+
             </div>
         </div>
 
