@@ -1,19 +1,44 @@
 <?php
+    session_start();
+    
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $repassword = $_POST['repassword'];
+    $email = $_POST['email'];
 
+
+    //connect database
+    $db = mysqli_connect('localhost','root','','phutaocainao');
+    //$db = mysql_connect('localhost', 'root', '', 'registration');
+    
+    if($password == $repassword){
+        $password = md5($password);
+        $sql = "INSERT INTO cmmphuc (username, email, password) VALUES ('$username', '$email', '$password')";
+        mysqli_query ($db, $sql);
+        $_SESSION['message'] = "dang nhap thanh cong";
+        $_SESSION['username'] = $username;
+        //header("location: index.php");
+    }else{
+        $_SESSION['message'] = "Password khong trung";
+    }
 ?>
+
+
+
+
 
 
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Login</title>
+		<title>Register</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body>
 		<div class="register">
-			<h1>Login</h1>
-			<form action="idpasslogin.php" method="post" autocomplete="off">
+			<h1>Register</h1>
+			<form action="register.php" method="post" autocomplete="off">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
@@ -26,8 +51,16 @@
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required>
 
-                
-				<input type="submit" value="Login">
+                <label for="repassword">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="repassword" placeholder="Password" id="repassword" required>
+
+				<label for="email">
+					<i class="fas fa-envelope"></i>
+				</label>
+				<input type="email" name="email" placeholder="Email" id="email" required>
+				<input type="submit" value="Register">
 			</form>
 		</div>
 	</body>
