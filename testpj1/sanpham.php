@@ -1,6 +1,9 @@
 <?php include './header.php'; ?>
+
+
+
 <div class="type-index">
-    <div class="container">   
+     
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="navbar-nav kam">
           <li class="nav-item dinhvi">
@@ -76,17 +79,36 @@
     </div>
 
     <div class="row trangchu">
+      <div id="navbar">
       <a class="trangchu1" href="index.php">Trang chủ</a>
       <a class="trangchu1" href="gioithieu.php">Giới thiệu</a>
-      <a class="trangchu1" href="sanpham.php">Sản phẩm</a>
-      <a class="trangchu1" href="#">Khuyến mãi</a>
+      <a class="trangchu1" href="#.php">Sản phẩm</a>
+      <a class="trangchu1" href="khuyenmai.php">Khuyến mãi</a>
       <a class="trangchu1" href="tuyendung.php">Tuyển dụng</a>
       <a class="trangchu1" href="lienhe.php">Liên Hệ</a>
       
+                                          
+                    </div>
+                 </div>
     </div>
 
-  </div>
-  
-</div>
-<?php include './module/khuyenmai-content.php'; ?>
+
+<script>
+  window.scroll = function(){myFunction()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function myFunction() {
+    if(window.pageYOffset > sticky) 
+    {
+      alert("FAG")
+    }
+    else
+    {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+<?php include './module/gt2-content.php'; ?>
+
+
 <?php include './footer.php'; ?>
