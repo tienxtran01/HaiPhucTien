@@ -74,7 +74,7 @@ $url_path = str_replace('\\', '/', $url_path);
                                 
                      
                               <span style="width: 200px"><hr></span>
-                              <p> <a href="#">Sản phẩm</a><br></p>
+                              <p> <a href="sanpham.php">Sản phẩm</a><br></p>
                                
                              
                               <span style="width: 200px"><hr></span>

@@ -12,7 +12,7 @@
 <div class="type-gioithieu">
     <div class="container">
     <h2 class="gttitle">GIỚI THIỆU</h2>
-    <img src="./images/GT-1.png"  alt="">
+    <img src="./images/GT-1.png" style="margin-left: 456px;" alt="">
         <p id="gt">ToyStore – điểm mua sắm trực tuyến hàng đầu Việt Nam,
              kết hợp hệ thống cửa hàng bán lẻ đặt tại Hà Nội & thành phố Hồ Chí Minh – chuyên cung ứng các mặt hàng dành cho Mẹ & Bé: Giá cả cạnh tranh, 
              mẫu mã đa dạng, dịch vụ khách hàng nhiệt tình chu đáo và nhất là phong cách mua sắm hiện đại.</p> <br>   <br> 

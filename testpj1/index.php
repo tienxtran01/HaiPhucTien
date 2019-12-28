@@ -1,12 +1,26 @@
 <?php
 
-    $url_host = 'http://'.$_SERVER['HTTP_HOST'];
-    $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
-    $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
+   
+  $username = $_POST['username'];
+  $password = $_POST['password'];
 
-    preg_match_all($pattern_uri, __DIR__, $matches);
-    $url_path = $url_host . $matches[1][0];
-    $url_path = str_replace('\\', '/', $url_path);
+
+
+  $conn = mysqli_connect('localhost', 'root', '', 'logintest');
+
+  $result ="SELECT * FROM signin where username = '$username' and password = '$password'";
+  $query = mysqli_query($conn, $result);
+  $row = mysqli_num_rows($query);
+  if ($row == 0) {
+    
+    echo "sai tai khoan hoac mat khau!!!! <br>";
+    header("location:login.php");
+    
+  }else{
+    echo " "; 
+    
+  }
+
 
 ?>
 <?php include './header.php'; ?>
@@ -49,6 +63,7 @@
           <li>
             <a href="#" class="addcart">Giỏ Hàng <i class="fas fa-shopping-cart"></i></a>
           </li>
+
         </ul>
       </nav>
 
@@ -81,61 +96,21 @@
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+
+            <a style="float: right;" class="btn btn-outline-success my-2 my-sm-0" href="<?php require_once('connect.php');?>">Logout</i></a>
+            <a style="float: right;" class="btn btn-outline-success my-2 my-sm-0" href="login.php">Login</i></a>
       </div>
     </div>
 
     <div class="row trangchu">
       <a class="trangchu1" href="#">Trang chủ</a>
       <a class="trangchu1" href="gioithieu.php">Giới thiệu</a>
-      <a class="trangchu1" href="chitiet.php">Sản phẩm</a>
+      <a class="trangchu1" href="sanpham.php">Sản phẩm</a>
       <a class="trangchu1" href="khuyenmai.php">Khuyến mãi</a>
       <a class="trangchu1" href="tuyendung.php">Tuyển dụng</a>
       <a class="trangchu1" href="lienhe.php">Liên Hệ</a>
-      <button type="button" class="btn  btn-lg dropbtn" data-toggle="modal" data-target="#myModal"><i class="fa fa-user background1"></i></button>
-                                        <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-          <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          
-          
-          <div class="tab">
-                  <button class="tablinks" onclick="openClick(event, 'Login')">Login</button>
-                  <button class="tablinks" onclick="openClick(event, 'Register')">Register</button>
-          </div>
-        </div>
-        <div class="modal-body">
-          <h3>Login or Register</h3>
-            <div id="Login" class="tabcontent">
-    <form action="#" method="post">
-        <div class="modal-body">
-          <h3>Login your account</h3>
-          <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" placeholder="Username" name="username" id="username" autocomplete="username" value=""><br>
-          <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" placeholder="Password" name="password" id="password" autocomplete="current-password"><br>
-          <input type="checkbox" id="cbox2">
-          <label class="dayofweek" for="cbox2">Remember Me</label><br>
-          <button type="submit" class="btn btn-default btn-login" data-dismiss="modal">Login</button>
-        </div>
-    </form>
-</div>
-        
 
-        <div id="Register" class="tabcontent">
-    <form action="#" method="post">
-  <div class="modal-body">
-          <h3>Register</h3>
-          <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" placeholder="Username" name="username1" id="username1" autocomplete="username1" value=""><br>
-          <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" placeholder="Email" name="Email" id="Email" autocomplete="Email" value=""><br>
-          <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" placeholder="Password" name="password1" id="password1" autocomplete="current-password"><br>
-          <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" placeholder="password confirm" name="password-confirm" id="password-confirm" autocomplete="current-password"><br>
-          <button type="submit" class="btn btn-default btn-login" data-dismiss="modal">Register</button>
-        </div>
-        </form>
-    </div>
-             </div>
-      </div>    
-                    </div>
-                 </div>
+      
     </div>
 
   </div>

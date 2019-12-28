@@ -1,0 +1,38 @@
+.type-51 .pagetitle a {
+  color: rgba(102,102,102,0.7);
+  Font: 18px "Open Sans", sans-serif;
+}
+.type-51 .pagetitle {
+  font: 18px "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.type-51 .producttitle {
+  margin-left: 50px;
+  color: #0a0506;
+  font: 18px "Open Sans", sans-serif;
+}
+.type-51 .price {
+  margin-left: 50px;
+  color: #d60000;
+  font: 18px "Open Sans", sans-serif;
+}
+.type-51 .addtocartbutton button {
+  margin-left: 35px;
+  background-color: #318a00;
+  padding: 5px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.type-51 .imagezoom {
+  padding-top: 20px;
+}
+.type-51 .product {
+  padding: 30px 0px;
+}
+.type-51 .select {
+  float: right;
+  position: absolute;
+  top: 230px;
+  left: 900px;
+}
