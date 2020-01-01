@@ -59,6 +59,7 @@
 				</label>
 				<input type="email" name="email" placeholder="Email" id="email" required>
 				<input type="submit" value="Register">
+				<a href="login.php" class="login1">Login</a>
 			</form>
 		</div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -93,6 +94,15 @@ body {
   	font-size: 24px;
   	padding: 20px 0 20px 0;
   	border-bottom: 1px solid #dee0e4;
+}
+.register a{
+	text-align: center;
+	text-decoration: none;
+}
+.register a{
+	text-align: center;
+	color: #5b6574;
+	text-decoration: none;
 }
 .register form {
   	display: flex;

@@ -6,9 +6,9 @@
 
 
 
-  $conn = mysqli_connect('localhost', 'root', '', 'logintest');
+  $conn = mysqli_connect('localhost', 'root', '', 'phutaocainao');
 
-  $result ="SELECT * FROM signin where username = '$username' and password = '$password'";
+  $result ="SELECT * FROM cmmphuc where username = '$username' and password = '$password'";
   $query = mysqli_query($conn, $result);
   $row = mysqli_num_rows($query);
   if ($row == 0) {
